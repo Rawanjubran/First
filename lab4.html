@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Form</title>
+</head>
+<body>
+
+<h1>Car Form</h1>
+
+<table>
+    <tr>
+        <th>Car Name</th>
+        <th>Car Image</th>
+        <th>Car Price</th>
+        <th>Car Website</th>
+    </tr>
+    <tr>
+        <td onclick="focusField('carName')">Audi</td>
+        <td><img src="https://i.pinimg.com/736x/12/07/39/120739111607b65c31323e36ccce10c2.jpg" alt="Audi" width="100"></td>
+        <td>20000</td>
+        <td><a href="https://www.audi.com" target="_blank">Audi Website</a></td>
+    </tr>
+    <tr>
+        <td onclick="focusField('carName')">Mercedes</td>
+        <td><img src="https://i.pinimg.com/736x/11/51/b1/1151b1044b87d7eadfdc55264c057723.jpg" alt="Mercedes" width="100"></td>
+        <td>40000</td>
+        <td><a href="https://www.mercedes.com" target="_blank">Mercedes Website</a></td>
+    </tr>
+    <tr>
+        <td onclick="focusField('carName')">BMW</td>
+        <td><img src="https://i.pinimg.com/736x/c5/94/43/c594432fd784823d5f9d18630084f2f9.jpg" alt="BMW" width="100"></td>
+        <td>20000</td>
+        <td><a href="https://www.bmw.com" target="_blank">BMW Website</a></td>
+    </tr>
+</table>
+
+<form onsubmit="return validateForm()">
+    <label for="carName">Car Name:</label>
+    <input type="text" id="carName" required><br>
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" required onclick="focusField('email')"><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" required><br>
+
+    <label for="date">Purchase Date:</label>
+    <input type="date" id="date" required><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
